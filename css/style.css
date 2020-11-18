@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li, a, button {
+    font-family: "Montserrat", san-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    overflow: auto;
+}
+
+.role {
+    color: white;
+    font-family: "Montserrat", san-serif;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+
+.role_change {
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    background-color: #0088a9;
+    margin-left: 20px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav_links{
+    list-style: none;
+    margin-right: 10px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.4s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.container {
+    text-align: left;
+    padding: .8em 1.2em;
+    background-color: white;
+    margin: 0 10%;
+}
+
+.white-container {
+    background-color: white;
+    color: black;
+    height: 270px;
+}
+
+.white-container .container h2 {
+    margin-top: 60px;
+    background-color: white;
+    font-size: 30px;
+}
+
+.white-container .container p {
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.white-container .container img {
+    width: 200px;
+    float: left;
+}
+
+.white-container .container .user {
+    background-color: white;
+    margin-left: 250px
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 20%;
+    padding: 5px;
+    background-color: white;
+}
