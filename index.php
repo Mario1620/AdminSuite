@@ -1,7 +1,6 @@
 <?php 
 session_start();
 include ('database.php');
-print($_SESSION['user'])
 ?>
 
 
@@ -56,22 +55,19 @@ print($_SESSION['user'])
     <div class="white-container">
         <div class="container">
             <div class="row">
-                <div class="column">
-                    <a href="#"><img src="images/appmonitor.jpg" alt=""></a>
-                </div>
-                <div class="column">
-                    <a href="#"><img src="images/techsupport.jpg" alt=""></a>
-                </div>
-                <div class="column">
-                    <a href="#"><img src="images/appdev.jpg" alt=""></a>
-                </div>
-                <div class="column">
-                    <a href="#"><img src="images/appadmin.jpg" alt=""></a>
-                </div>
-                <div class="column">
-                    <a href="#"><img src="images/releasemanage.jpg" alt=""></a>
-                </div>
-            </div>
+                <?php
+                $query = "SELECT * FROM portals WHERE portal_user = '{$_SESSION['role']}' ";
+                $result = mysqli_query($con, $query);
+                while($row = mysqli_fetch_assoc($result))
+                {
+                    ?>
+                        <div class="column">
+                            <a href="<?php echo $row['link']; ?>"><img src="<?php echo $row['image']; ?>" alt=""></a>
+                        </div>
+                    <?php
+                }
+                ?>
+             </div>
         </div>
     </div>
 
