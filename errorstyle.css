@@ -1,0 +1,26 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  font-family: 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.container{
+  width: 100%;
+  text-indent: 10px;
+  position: absolute;
+
+  color: #000000;
+}
+
+header{
+  border-top: 150px solid rgb(36, 36, 39);
+}
+
+
+footer{
+  padding-bottom: 489px;
+  border-bottom: 150px solid rgb(36, 36, 39);
+}
