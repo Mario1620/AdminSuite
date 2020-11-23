@@ -20,7 +20,7 @@ include ('database.php');
             <ul class="nav_links">
                 <li><a href="#">Bug Report</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
 
