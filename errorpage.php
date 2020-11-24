@@ -12,7 +12,8 @@
     <h1>Access Denied</h1>
     <p>You don't have permission to access on this portal.
      Please contact your System Administrator. </p>
-    <p>Reference #<?php echo uniqid(); ?></p>
+    <p class = "margin">Reference #<?php echo uniqid(); ?></p>
+    <a href="logout.php"><b>Go back</b></a>
     <footer id="footer"></footer>
   </div>
 </body>
