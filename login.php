@@ -30,6 +30,9 @@ else if($row == 1){
         $_SESSION['user'] = $username;
         header("location: index.php");
     }
+     else if($pass == $password && strpos($role, "ADMIN") !== true) {
+        header("location: errorpage.php");
+    }
     else if($pass != $password) //user password is wrong 
     {
         $_SESSION['message'] = "Wrong Username or Password";
